@@ -1,14 +1,16 @@
 
 // TREINANDO PROMISE
 
+console.log('Pedindo o Uber...')
+
 
 const myPromise =  new Promise((resolve,reject)=>{
   setTimeout(()=>{
-    const message = "A Promise foi resolvida!"
-    const error = "A Promise falhou!"
+    const message = "O uber chegou!"
+    const error = "Motorista não encontrado :("
     resolve(message)
     reject(error)
-  },2000)
+  },3000)
 })
 
 myPromise.then((message)=>{
